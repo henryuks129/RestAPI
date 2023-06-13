@@ -14,7 +14,7 @@ const postSchema = new Schema({
         type: Date,
         dafault: Date.now
     }
-})
+}, {timestamps: true})
 
 const POSTS = mongoose.model('singlePost', postSchema)
 
